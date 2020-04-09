@@ -11,8 +11,11 @@ function naikAngkot(arrPenumpang) {
                 akhir = j * 2000    
             }
         }
-        result.push({penumpang: arrPenumpang[i][0], naikDari: arrPenumpang[i][1], tujuan: arrPenumpang[i][2], bayar:Math.abs(akhir -awal)}) 
-    }
+        result.push({penumpang: arrPenumpang[i][0],
+                     naikDari: arrPenumpang[i][1],
+                     tujuan: arrPenumpang[i][2],
+                     bayar:Math.abs(akhir -awal)}) 
+    }       
     return result
   }
   
