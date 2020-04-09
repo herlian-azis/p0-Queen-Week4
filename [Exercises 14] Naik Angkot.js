@@ -7,7 +7,7 @@ function naikAngkot(arrPenumpang) {
             if (rute[j]==arrPenumpang[i][1] ) {
                 awal = j * 2000
             }
-            else  if (rute[j]==arrPenumpang[i][2] ) {
+            else if (rute[j]==arrPenumpang[i][2] ) {
                 akhir = j * 2000    
             }
         }
