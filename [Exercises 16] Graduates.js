@@ -2,6 +2,9 @@
   function graduates (students) {
     let result ={}
     for (let i = 0; i < students.length; i++) {
+      if(!(students[i].class in result)){
+        result[students[i].class]=[]
+    }
       for (let j = i+1; j < students.length; j++) {
         if (students[i].score <students[j].score ) {
             temp = students[i]
