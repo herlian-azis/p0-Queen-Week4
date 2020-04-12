@@ -1,21 +1,17 @@
 function checkAB(num) {
-    // you can only write your code here!
-    let numa=[]
-    let numb=[]
-    
+    // you can only write your code here!   
     for (let i = 0; i < num.length; i++) {
         if(num[i] =="a"&& num[i+4] =="b" ){
-            // numa.push(i)
             return true
-        }
-        else if(num[i] =="b"){
-            numb.push(i)
+        }     
+    }
+    for (let i = num.length; i >= 0; i--) {
+        if(num[i] =="b"&& num[i+4] =="a" ){
+            return true
         }
         
     }
-    // if(numa )
-    // console.log(numa,numb);
-    
+    return false
   }
   
   // TEST CASES
